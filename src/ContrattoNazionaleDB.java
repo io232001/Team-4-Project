@@ -1,4 +1,5 @@
 public class ContrattoNazionaleDB {
+    public Contracts typeOfContract;
     double durationTime;
     double wage;
     boolean trialPeriod;
