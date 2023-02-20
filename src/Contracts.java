@@ -11,4 +11,5 @@ public enum Contracts {
         SOMMINISTRAZIONE
     }
 
+
     //creare metodo per switchare contratto
