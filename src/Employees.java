@@ -1,21 +1,21 @@
 import java.time.LocalDate;
-
 public class Employees {
-
-    private final String name;
-    private final String surName;
-    private int ID;
-    private final String CodiceFiscale;
-    private String typeOfWork;
-    private String typeOfContract;
-    private final LocalDate dateOfBirth;
-
+    public String name;
+    public String surName;
+    public int ID;
+    public String CodiceFiscale;
+    public String typeOfWork;
+    public String typeOfContract;
+    public String dateOfBirth;
+    public Employees(){
+    }
     public Employees(String name,
                      String surName,
                      int ID,
                      String codiceFiscale,
                      String typeOfWork,
-                     String typeOfContract, LocalDate dateOfBirth) {
+                     String typeOfContract, String dateOfBirth)
+    {
         this.name = name;
         this.surName = surName;
         this.ID = ID;
@@ -24,6 +24,7 @@ public class Employees {
         this.typeOfContract = typeOfContract;
         this.dateOfBirth = dateOfBirth;
     }
+
 
     public String getName() {
         return name;
@@ -61,7 +62,7 @@ public class Employees {
         this.typeOfContract = typeOfContract;
     }
 
-    public LocalDate getDateOfBirth() {
+    public String getDateOfBirth() {
         return dateOfBirth;
     }
 }

@@ -1,9 +1,9 @@
 public class Admin {
 
-    String username;
-    String password;
-    String role;
-    String authorizations;
+    public String username;
+    public String password;
+    public String role;
+    public String authorizations;
 
     public Admin(String username, String password, String role, String authorizations) {
         this.username = username;

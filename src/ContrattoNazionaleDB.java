@@ -1,11 +1,11 @@
+//renderlo interfacce
 public class ContrattoNazionaleDB {
     public Contracts typeOfContract;
-    double durationTime;
-    double wage;
-    boolean trialPeriod;
-    boolean internshipAlreadyDone;
-    int levelOfContract; //da vedere
-
+    public double durationTime;
+    public double wage;
+    public boolean trialPeriod;
+    public boolean internshipAlreadyDone;
+    public int levelOfContract; //da vedere
     public ContrattoNazionaleDB(double durationTime, double wage, boolean trialPeriod, boolean internshipAlreadyDone, int levelOfContract) {
         this.durationTime = durationTime;
         this.wage = wage;
@@ -13,7 +13,6 @@ public class ContrattoNazionaleDB {
         this.internshipAlreadyDone = internshipAlreadyDone;
         this.levelOfContract = levelOfContract;
     }
-
     /**
      * Added void method printContracts for switch
      * @param contract of the single employee

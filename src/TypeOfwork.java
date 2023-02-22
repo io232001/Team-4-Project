@@ -1,8 +1,8 @@
 public class TypeOfwork {
 
-    String manualWork;
-    String staticWork;
-    String transferWork;
+    public String manualWork;
+    public String staticWork;
+    public String transferWork;
 
     public TypeOfwork(String manualWork, String staticWork, String transferWork) {
         this.manualWork = manualWork;

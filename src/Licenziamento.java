@@ -2,11 +2,11 @@ import java.time.LocalDate;
 import java.util.Date;
 
 public class Licenziamento extends Employees {
-    Date dataLicenziamento;
-    String reasonsOfDismissal;
-    int ExperienceLevel;
+    public Date dataLicenziamento;
+    public String reasonsOfDismissal;
+    public int ExperienceLevel;
 
-    public Licenziamento(String name, String surName, int ID, String codiceFiscale, String typeOfWork, String typeOfContract, LocalDate dateOfBirth, Date dataLicenziamento, String reasonsOfDismissal, int experienceLevel) {
+    public Licenziamento(String name, String surName, int ID, String codiceFiscale, String typeOfWork, String typeOfContract, String dateOfBirth, Date dataLicenziamento, String reasonsOfDismissal, int experienceLevel) {
         super(name, surName, ID, codiceFiscale, typeOfWork, typeOfContract, dateOfBirth);
         this.dataLicenziamento = dataLicenziamento;
         this.reasonsOfDismissal = reasonsOfDismissal;

@@ -1,17 +1,15 @@
 import java.time.LocalDate;
 
-public class Payroll extends Employees {
+public class Payroll {
+    public boolean presenza; //presence
+    public int oreAssenze; //absentHours
+    public int oreContratto; //contractHours
+    public int oreEffettuate; //hoursWorked
+    public double trattenuteStato;
+    public double retribuzioneLorda;
+    public double retribuzioneNetta;
 
-    private boolean presenza; //presence
-    private int oreAssenze; //absentHours
-    private int oreContratto; //contractHours
-    private int oreEffettuate; //hoursWorked
-    private double trattenuteStato;
-    private double retribuzioneLorda;
-    private double retribuzioneNetta;
-
-    public Payroll(String name, String surName, int ID, String codiceFiscale, String typeOfWork, String typeOfContract, LocalDate dateOfBirth, boolean presenza, int oreAssenze, int oreContratto, int oreEffettuate, double trattenuteStato, double retribuzioneLorda, double retribuzioneNetta) {
-        super(name, surName, ID, codiceFiscale, typeOfWork, typeOfContract, dateOfBirth);
+    public Payroll(boolean presenza, int oreAssenze, int oreContratto, int oreEffettuate, double trattenuteStato, double retribuzioneLorda, double retribuzioneNetta) {
         this.presenza = presenza;
         this.oreAssenze = oreAssenze;
         this.oreContratto = oreContratto;
@@ -20,6 +18,7 @@ public class Payroll extends Employees {
         this.retribuzioneLorda = retribuzioneLorda;
         this.retribuzioneNetta = retribuzioneNetta;
     }
+    Employees employees=new Employees();
 
     public boolean isPresenza() {
         return presenza;
