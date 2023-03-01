@@ -1,5 +1,4 @@
 import java.time.LocalDate;
-
 public class Payroll {
     public boolean presenza; //presence
     public int oreAssenze; //absentHours
