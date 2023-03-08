@@ -1,3 +1,4 @@
+package main.java;
 import java.time.LocalDate;
 public class Performance{
     public int rating; //valutazioni

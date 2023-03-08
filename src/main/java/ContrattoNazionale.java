@@ -1,4 +1,5 @@
-public abstract class ContrattoNazionale implements ContrattoNazionaleDB{
+import org.jetbrains.annotations.NotNull;
+public abstract class ContrattoNazionale implements ContrattoNazionaleDB {
     public Contracts typeOfContract;
     public double durationTime;
     public double wage;
@@ -12,7 +13,7 @@ public abstract class ContrattoNazionale implements ContrattoNazionaleDB{
         this.internshipAlreadyDone = internshipAlreadyDone;
         this.levelOfContract = levelOfContract;
     }
-    public static void printContracts(Contracts contract)
+    public static void printContracts(@NotNull Contracts contract)
     {
         switch(contract){
             case DETERMINATO:
